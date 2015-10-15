@@ -1,0 +1,31 @@
+body{
+	background-color: #F5F5F5;
+}
+div {
+	width: 510px;
+	height: 750px;
+	background-color: white;
+	margin: 5px 420px 45px 420px;
+	box-shadow:  0 0 7px #BEBEBE;
+}
+h1 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 50px;
+}
+img {
+	width: 170px;
+	height: 170px;
+	padding-left: 170px;
+}
+p {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+hr {
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 410px;
+}
+ul {padding-left: 80px;
+}
