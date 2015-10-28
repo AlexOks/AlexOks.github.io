@@ -52,6 +52,8 @@ background-image: linear-gradient(to bottom, #444343 0%, #5E5E5E 100%);
 	
 }
 .menu a:hover{
+	border: 1px solid #c8c8c8;
+	border-style:none solid;
 	background-image: -webkit-gradient(
 	linear,
 	left top,
