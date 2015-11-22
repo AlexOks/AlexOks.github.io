@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../img/bg.png) 0 0 no-repeat;
+	font-family: "Helvetica Neue";
+}
+/*Header*/
+.header{
+	position: relative;
+	height: 36px;
+	width: 1214px;
+	background-color: #085291;
+	font-size: 14px;
+
+}
+.ola{
+	width: 190px;
+	float: right;
+	margin-right: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	background-image: -webkit-gradient(	linear,	left top, left bottom,	color-stop(0, #50B0DC),	color-stop(1, #2E79C4));
+    background-image: -o-linear-gradient(bottom, #50B0DC 0%, #2E79C4 100%);
+    background-image: -moz-linear-gradient(bottom, #50B0DC 0%, #2E79C4 100%);
+    background-image: -webkit-linear-gradient(bottom, #50B0DC 0%, #2E79C4 100%);
+    background-image: -ms-linear-gradient(bottom, #50B0DC 0%, #2E79C4 100%);
+    background-image: linear-gradient(to bottom, #50B0DC 0%, #2E79C4 100%); 
+	font-weight: bold;
+	border: 1px solid #4a9cd6; 
+}
+.ola a{
+	color: #fff;
+}
+.ola a:hover{
+	text-decoration: none;
+}
+.minhas{
+	margin: 2px;
+	padding: 0 18px 0 20px;
+	height: 32px;
+	width: 146px;
+	float:right;
+	line-height: 34px;
+	background: url(../img/flag.png) 20px 0 no-repeat;
+	text-align: right;
+	border-left: 1px solid #60b5ed;
+}
+.minhas a{
+	text-decoration: none;
+	color: #fff;
+}
+.minhas a:hover{
+	text-decoration: underline;
+}
+.menu li{
+	float: right;
+	list-style: none;
+}
+.menu a{
+	padding: 10px;
+	line-height: 35px;
+	text-decoration: none;
+	color: #60b5ed;
+	font-size: 14px;
+}
+.menu a:hover{
+	background-color:#4eabda; 
+	color: #ffffff;
+	font-weight: bold;
+}
+/*Content*/
+.wrapper{
+	height: 1022px;
+	width: 1214px;
+}
+.form{
+	position: relative;
+	top: 215px;
+	margin: auto;
+	width: 550px;
+	height: 610px;
+	background-color: rgba(0,0,0,0.5);
+}
+.formhead{
+	height: 60px;
+	font-size: 21px;
+	border-bottom: 2px solid #bbc1b3;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+}
+.formcontent{
+	height: 550px;
+}
+.facebook{
+	height: 72px;
+	margin: auto;
+}
+.fb{
+	background: url(../img/facebook.png) no-repeat;
+	display: block;
+	top: 35px;
+	position: relative;
+	margin: auto;
+	height: 34px;
+	width: 276px;
+	border: none;
+}
+.ou{
+	height: 72px;
+	background: url(../img/ou.png) 140px 35px no-repeat;
+}
+.forminput{
+	position: relative;
+	margin: 0 auto;
+	width: 276px;
+	font-size: 14px;
+}
+.text{
+	margin-bottom: 15px;
+	height: 34px;
+	width: 278px;
+	border:none;
+	border-bottom: 1px solid #4b4b49;
+	font-size: 14px;
+	text-indent: 20px;
+	background-color: #111111;
+	color: #cccccc;
+}
+.text:focus{
+	outline: none;
+	background-color: #1b5288;
+	-webkit-box-shadow: 0px 0px 6px 3px rgba(70,128,171,1);
+	-moz-box-shadow: 0px 0px 6px 3px rgba(70,128,171,1);
+	box-shadow: 0px 0px 6px 3px rgba(70,128,171,1);
+}
+.check{
+	margin-top: 2px;
+	height: 15px;
+	font-size: 14px;
+	color: #cccccc;
+}
+.send{
+	margin: 25px 60px;
+	height: 36px;
+	width: 150px;
+	border-radius: 3px;
+	border: 1px solid #6bb8e7;
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #50AFDB),
+	color-stop(1, #2E79C4)
+);
+background-image: -o-linear-gradient(bottom, #50AFDB 0%, #2E79C4 100%);
+background-image: -moz-linear-gradient(bottom, #50AFDB 0%, #2E79C4 100%);
+background-image: -webkit-linear-gradient(bottom, #50AFDB 0%, #2E79C4 100%);
+background-image: -ms-linear-gradient(bottom, #50AFDB 0%, #2E79C4 100%);
+background-image: linear-gradient(to bottom, #50AFDB 0%, #2E79C4 100%);
+	color: #fff;
+
+}
+.form1 p{
+	color: #fff;
+	text-align: center;
+	font-size: 9px;
+}
+
+/*.
+
+
+
+
+
+	
+}
+.text:focus{
+
+}
+.send{
+	position: absolute;
+	left: 60px;
+	height: 32px;
+	width: 150px;
+	
+}
+.foottext{
+	position: absolute;
+	top:560px;
+	left: 120px; 
+	text-align: center;
+	font-size: 12px;
+	color: #cccccc;
+}*/
