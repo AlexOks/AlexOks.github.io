@@ -1,433 +1,663 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
+}
+
+.wrapper {
+	width: 909px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 45px 0 45px;
+	border: 1px solid #000;
+	box-shadow: 1px 3px 16px 3px rgba(0,0,0,0.75);
+	position: relative;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	width: 100%;
+}
+
+/*HEADER*/
+
+.header {
+	width: 954px;
+	height: 315px;
+	margin: 18px 0 0 0;
+	position: relative;
+}
+
+.phone {
+	float: left;
+	padding: 5px 14px 6px 7px;
 
 }
-.wrapper{
-	position: relative;
-	margin: 0 auto;
-	width: 910px;
-	height: 1295px;
-	font-family: "Lucida Sans Unicode", sans-serif;
-}
-/*Header*/
-header{
-	height: 315px;
-	margin-top: 12px;
-	position: relative;
-}
-.phone{
-	float: left;
-	height: 23px;
-	width: 295px;
-	margin-top: 5px;
-	margin-left: 5px;
+
+.phone span {
+	font: 18px Arial, Helvetica, sans-serif;
 	color: #5e696d;
-	font-size: 18px;
-	font-family: Arial;
 	vertical-align: 4px;
 	letter-spacing: 0.5px;
 }
-.phone img{
+
+.registration {
 	float: left;
-	margin-right: 5px;
-}
-.phone span{
-	line-height: 23px;
-}
-.registration{
-	position: relative;
-	float: left;
-	width: 495px;
+	width: 469px;
 	height: 28px;
-	margin-left: 13px;
-	background: linear-gradient(to top, #0c3357, #1f6787);
-	border-radius: 3px;
-}
-.registration img{
-	margin: 5px 4px 5px 8px;
-	float:left;
-}
-.registr{
+	padding: 0 0 0 27px;
+	background: #fff url('../img/registration.png') 0 0 no-repeat;
+
+	border-radius: 5px;
+	-webkit-box-shadow: 3px 4px 13px -2px rgba(180,180,180,1);
+	-moz-box-shadow: 3px 4px 13px -2px rgba(180,180,180,1);
+	box-shadow: 3px 4px 13px -2px rgba(180,180,180,1);
 	position: relative;
-	float: left;
-	width: 273px;
-	height: 28px;
 }
-/*input{
+
+.registration form input {
 	float: left;
-	margin-left: 25px;
-}*/
-#login{
-	margin: 3px 4px 4px 0px;
 	width: 110px;
-	height: 16px;
-	box-shadow: 2px rgba(0,0,0,0.5);;
-	float: left;
-	font-size: 11px;
+	height: 14px;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding: 0 0 0 0;
+	line-height: 14px;
+	outline: none;
 }
-#password{
-	margin: 3px 4px 4px 0px;
-	width: 112px;
-	height: 16px;
-	float: left;
-	font-size: 11px;
+
+.registration .entrance {
+	width: 29px;
+    height: 17px;
+    font-size: 11px;
+    border: none;
+    background: none;
+    color: white;
 }
-#submit{
-	float: left;
-	width: 35px;
-	height: 28px;
-	background-color: rgba(0,0,0,0);
-	border: none;
-	font-size: 11px;
-	color: #fff;
-}
-.reg{
-	line-height:28px;
-	font-size: 12px;
-	color: #fff;
+
+.registration a {
 	text-decoration: none;
+	font-size: 13px;
+	color: white;
+	line-height: 28px;
 }
-.reg:before {
+
+.registr:before {
 	content: '';
     border-left: 1px solid #FFFFFF;
-    height: 6px;
+    height: 8px;
     margin: 0 5px 0 0;
 }
-.forgot{
-	margin-left: 10px;
-	line-height:28px;
-	font-size: 12px;
-	color: #bfbfbf;
-}
-.nav{
-	position: relative;
-	float:right;
-	margin-top: 2px; 
-	margin-right: 8px;
-	height: 20px;
-	width: 76px;
-	border: 1px solid #bfbfbf;
-	border-radius: 10px;
-}
-.nav li{
-	float: right;
 
-	list-style: none;
+.registration .registr {
+	margin: 0 10px 0 0;
+	letter-spacing: 0px;
+
 }
-.nav a{
-	line-height: 20px;
-	padding-right: 8px;
-	padding-top: 1px;
+
+.registration .forgotpass {
+	letter-spacing: 0.5px;
+	color: #bfbfbf;
+	text-decoration: underline;
+	margin-left: 4px;
+
 }
-.title{
-	margin-top: 10px;
-}
-.menu{
-	position: relative;
-	width: 910px;
+
+.main-menu-center {
+	width: 912px;
 	height: 35px;
-	background: linear-gradient(to top, #010101, #4d5663);
+	background: #fff url() 0 0 no-repeat;
+    background: #207cca; /* Old browsers */
+    background: -moz-linear-gradient(top,  #207cca 0%, #207cca 0%, #4d5663 0%, #4d5663 11%, #2d3236 28%, #010101 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #207cca 0%,#207cca 0%,#4d5663 0%,#4d5663 11%,#2d3236 28%,#010101 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #207cca 0%,#207cca 0%,#4d5663 0%,#4d5663 11%,#2d3236 28%,#010101 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#010101',GradientType=0 ); /* IE6-9 */
 	border-radius: 5px;
+	margin-top: 2px;
+
 }
-.main_menu{
-	float: left;
-	width: 492px;
-	height: 35px;
-	padding-left: 126px;
+
+.main-menu-center-left {
+	padding-left: 130px;
+	width: 550px;
+
+
 }
-.main_menu li{
+
+.main-menu-center-left li {
 	float: left;
 	list-style: none;
 }
-.main_menu a{
-	margin-top: 4px;
-	padding: 0 19px;
+
+.main-menu-center-left a {
 	display: block;
 	color: #b1bcc0;
+	font-family: Tahoma, Arial, sans-serif;
 	font-size: 14px;
-	line-height: 26px;
-	text-align: center;
-	text-decoration: none;
-}
-.main_menu .oplata{
-	padding:0 15px;
-}
-.main_menu .del{
-	padding:0 14px;
-}
-.main_menu .art{
-	padding:0 14px;
-}
-.main_menu .cont{
-	padding:0 7px;
-}
-.main_menu a:hover{
-	background: linear-gradient(to top, #09233b, #25617b); 
-	border-radius: 20px;
-	color: #fff;
-}
-.basket {
-	float: left;
-	position: relative;
-	height: 35px;
-	width: 278px;
-	color:#73797d;
-	font-size: 11px;
-	padding-right: 12px;
-}
-.basket img{
-	float: right;
-	margin: 8px 0px 8px 0px;
-}
-.basket span{
-	float: right;
 	line-height: 35px;
+	text-decoration: none;
+	padding: 0 18px;
+	letter-spacing: 0.6px;
+}
+
+.delivery {
+	margin: 0 0 0 -4px;
+}
+
+.articles {
+	margin: 0 0 0 -4px;
+}
+
+.contacts {
+	margin: 0 0 0 -11px;
+}
+
+.navi {
+	width: 74px;
+	height:20px;
+	float: right;
+	position: relative;
+	overflow: hidden;
+	right: 52px;
+	top: 2px;
+	border: 1px solid #bfc6c9;
+	border-radius: 10px;
+}
+
+.navi li {
+	float: left;
+	list-style: none;
+}
+
+.navi a {
+	height: 11px;
+	width: 13px;
+	display: block;
+	background: url(../img/navi.png) 0 0 no-repeat;
+	margin: 3px 0 0 8px;
 
 }
-.blue{
+
+.navi .site {
+	background-position: -20px;
+}
+
+.navi .letter {
+	background-position: -42px;
+}
+
+.main-menu-center-left a:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0d3458+100,207cca+100,0d3458+100,0d3458+100,207cca+100,207cca+100,0d3458+100,0d3458+101,0d3458+102,207cca+103 */
+	background: #1f6787; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1f6787 0%, #0d3458 100%, #207cca 100%, #0d3458 100%, #0d3458 100%, #207cca 100%, #207cca 100%, #0d3458 100%, #0d3458 101%, #0d3458 102%, #207cca 103%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #1f6787 0%,#0d3458 100%,#207cca 100%,#0d3458 100%,#0d3458 100%,#207cca 100%,#207cca 100%,#0d3458 100%,#0d3458 101%,#0d3458 102%,#207cca 103%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #1f6787 0%,#0d3458 100%,#207cca 100%,#0d3458 100%,#0d3458 100%,#207cca 100%,#207cca 100%,#0d3458 100%,#0d3458 101%,#0d3458 102%,#207cca 103%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#207cca',GradientType=0 ); /* IE6-9 */
+	border-radius: 20px;
+}
+
+.case {
+	float: right;
+	line-height: 34px;
+	color:#FFFFFF;
+	position: relative;
+
+}
+
+.case__goods {
+	font: 11px Arial, Helvetica, sans-serif;
+}
+
+.case__goods:before {
+    content: url(../img/case.png);
+    top: 9px;
+    right: 207px;
+    position: absolute;
+}
+
+.case__goods--quantity {
+	margin: 0 11px 0 0;
+	font: 12px Arial, Helvetica, sans-serif;
 	color: #0d5a8f;
-	font-size: 12px;
 }
-.gray1{
-	padding-left: 14px;
-	padding-right: 11px;
+
+.case__sum {
+	margin: 0 9px 0 0;
+	font: 11px Arial, Helvetica, sans-serif;
 }
-.gray2{
-	padding-left: 7px;
+
+.case__sum--grn {
+	margin: 0 17px 0 0;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #0d5a8f;
 }
+
+/*END HEADER*/
+
 /*CONTENT*/
-.content{
-	position: relative;
-	margin-top:12px;
-	height: 135px;
+
+.search {
 }
-/*SEACH FOR Auto*/
-.forauto{
+
+.search__car {
 	float: left;
-	position: relative;
-	margin-left: 5px;
-	width: 412px;
-	height: 133px;
-	font-size: 9px;
-	border: 1px solid #b6b6b7;
-	border-radius: 15px;
+    width: 374px;
+    height: 132px;
+    border: 1px solid #b3b3b4;
+    border-radius: 18px;
+    margin: 12px 13px 0 4px;
+    padding: 0 20px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+	box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+    font: 11px Arial, Helvetica, sans-serif;
 }
-.forauto_disk{
+
+.search__car--tire {
 	float: left;
-	height: 114px;
-	width: 177px;
-	margin-left: 17px;
-	margin-top: 3px;
-	border: none;
+	width: 180px;
 }
-dl{
-	height: 95px;
-	margin-top: 5px;
-}
-legend{
-	font-family: Arial;
+
+.search__car--tire dt {
+	float: left;
+	width: 70px;
 	font-size: 10px;
-	font-weight: 900;
-	color: #154468;
-}
-.forauto_disk dt{
-	width: 72px;
-	float: left;
+	margin: 0 0 5px 0;
 	clear: both;
-}
-.forauto_disk dd{
-	float: right;
-}
-.forauto_disk select{
-	height: 16px;
-	width: 100px;
-	border-bottom: none;
-}
-.marka{
-	margin-bottom: 6px;
-}
-.forauto_disk .year{
-	width: 60px;
-	margin-right: 41px;
-}
-.forauto_tire{
-	float: left;
-	height: 118px;
-	width: 177px;
-	margin-top: 1px;
-	margin-left: 27px;
-	border: none;
-}
-.forauto_tire dt{
-	width: 72px;
-	float: left;
-	clear: both;
-}
-.forauto_tire dd{
-	float: right;
-}
-.forauto_tire select{
-	height: 16px;
-	width: 100px;
-	border-bottom: none;
-}
-.forauto_tire .year{
-	width: 60px;
-	margin-right: 41px;
-}
-.forauto_tire legend{
-	text-align: right;
-}
-.search{
-	margin-left: 122px;
-	font-size: 11px;
-	font-style: italic;
-	color: #154467;
-}
-.titletire{
-	position: absolute;
-	top:1px;
-	left: 125px;
-	font-family: Arial;
-	font-size: 12px;
-	font-weight: 900;
-	color: #154468;
-}
-/*Search for tire*/
-.fortire{
-	float: left;
+	text-align: left;
+	vertical-align: top;
 	position: relative;
-	margin-left: 15px;
-	width: 190px;
-	height: 133px;
-	font-size: 9px;
-	border: 1px solid #b6b6b7;
-	border-radius: 15px;
-}
-.fortire fieldset{
-	float: left;
-	height: 124px;
-	width: 177px;
-	margin-left: 10px;
-	margin-top: 1px;
-	border: none;
-}
-.fortire dt{
-	width: 49px;
-	float: left;
-	clear: both;
-}
-.fortire dd{
-	height: 22px;
-}
-.fortire select{
-	height: 16px;
-	font-size: 11px;
-	border-bottom: none;
-}
-.fortire .box1{
-	position: absolute;
-	left: 57px;
-	top:69px;
-}
-.fortire .box2{
-	position: absolute;
-	left: 57px;
-	top:84px;
-}
-.fortire .box3{
-	position: absolute;
-	left: 57px;
-	top:98px;
-}
-/*SEARCH FOR DISK*/
-
-.fordisk{
-	float:left;
-	position: relative;
-	margin-left: 10px;
-	width: 264px;
-	height: 133px;
-	font-size: 9px;
-	border: 1px solid #b6b6b7;
-	border-radius: 15px;
-}
-.fordisk_disk dd{
-	height: 22px;
-}
-.fordisk_disk dt{
-	width: 72px;
-	float: left;
-	clear: both;
-	line-height: 12px;
-}
-.fordisk_disk .marg{
-	height: 22px;
-	margin-top: 10px;
-}
-.fordisk .fordisk_disk{
-	float: left;
-	width: 158px;
-	border: none;
-	border-right: 1px solid #000;
-	margin-top: 3px;
-	margin-left: 17px;
-}
-.dco dl{
-	height: 111px;
-}
-.fordisk select{
-	width: 55px;
-	height: 16px;
-	border-bottom: none;
-	font-size: 11px;
-	margin-left: 16px;
-}
-.fordisk .dco{
-	margin-left: 10px;
-	float: left;
-	width: 65px;
-	border: none;
-}
-.dco dt{
-	width: 61px;
-	line-height: 12px;
-}
-.dco select{
-	margin-left: 0;
-}
-.search_dco{
-	margin-left: 20px;
-	margin-top: 10px;
-	font-size: 11px;
-	font-style: italic;
-	color: #154467;
-}
-/*CONTENT MODDLE*/
-.content_middle{
-	position: relative;
-	width: 100%;
-	height: 767px;
-}
-.left_colum{
-	width: 21%;
-	float: left;
+	top: 3px;
 
 }
-.center_colum{
-	width: 58%;
-	float: left;
+
+.search__car--tire dd {
+	float: right;
+	width: 100px;
+	margin: 0 0 0 0;
 }
-.right_colum{
-	width: 21%;
-	float: left;
+
+.search__car--tire select {
+	width: 85px;
+	height: 20px;
+	margin: 0 0 5px 0;
 }
-/*
-.left_colum .left_title{
-	font-size: 12px;
-	line-height: 24px;
-	color: #114165;
-	border: 1px solid #114165;
-	border-radius: 12px;
+.search__car--disk {
+	float: left;
+	width: 180px;
+}
+.search__car--disk dt {
+	float: left;
+	width: 70px;
+	font-size: 10px;
+	margin: 0 0 5px 0;
+	clear: both;
+	text-align: left;
+	vertical-align: top;
+	position: relative;
+	top: 3px;
+}
+
+.search__car--disk dd {
+	float: right;
+	width: 100px;
+	margin: 0 0 5px 0;
+}
+
+.search__car--disk select {
+	width: 85px;
+	height: 20px;
+	margin: 0 0 5px 0;
+}
+
+.search__car span {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #8d999d;
+}
+
+.search__car_search {
+	float: right;
+	font-style: italic;
+	margin: -10px 20px 0 0;
+
+}
+
+.search__car_search a {
+	color: #154467;
+}
+
+/*.search__car--tire--form {
+	width: 101px;
+	height: 15px;
+	margin: 0 0 0 0;
+}
+
+.search__car--disk--form {
+	width: 101px;
+	height: 15px;
+	margin: 0 0 0 0;
 }*/
+
+.search__tire {
+    float: left;
+    width: 192px;
+    height: 135px;
+    border: 1px solid #b3b3b4;
+    border-radius: 18px;
+    margin: 10px 8px 0 0;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+	box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+}
+
+.search__disk {
+    float: left;
+    width: 267px;
+    height: 133px;
+    border: 1px solid #b3b3b4;
+    border-radius: 15px;
+    margin: 10px 0 0 0;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+	box-shadow: 5px 5px 5px 0px rgba(202,202,202,1);
+
+}
+
+.content__middle {
+	width: 100%;
+	height: 642px;
+}
+
+.content__middle__left_column {
+	float: left;
+	width: 190px;
+}
+
+.content__middle__left_column--h {
+	display: block;
+	border: 1px solid #8b979c;
+	border-radius: 15px;
+	width: 160px;
+	height: 24px;
+	font: 13px Arial, Helvetica, sans-serif;
+	margin: 17px 0 0 0;
+	line-height: 24px;
+	text-align: center;
+	background: url(../img/book.png) 2px 2px no-repeat;
+	color: #114165;
+	padding-left: 20px;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.content__middle__left_column--h1 {
+	display: block;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    width: 117px;
+    height: 25px;
+    font: 13px Arial, Helvetica, sans-serif;
+    margin: 14px 0 3px 0;
+    line-height: 28px;
+    text-align: left;
+    background: url(../img/bubl.png) 2px 2px no-repeat;
+    color: #114165;
+    padding-left: 32px;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.content__middle__left_column--h1--tire li {
+	list-style-type: circle;
+	color: #79878d;
+	margin-left: 46px;
+	margin-bottom: 8px;
+}
+
+.content__middle__left_column--h1--tire .content__middle__left_column--h1--tire--li1 {
+	margin-bottom: 1px;
+}
+
+.content__middle__left_column--h1--tire a {
+	text-decoration: none;
+	letter-spacing: -0.2px;
+	color: #465961;
+}
+
+.content__middle__left_column--h1--tire a:hover {
+	color: #0c3256;
+	font: 14px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.content__middle__left_column--h2 {
+	display: block;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    width: 117px;
+    height: 25px;
+    font: 13px Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    text-align: left;
+    background: url(../img/bubl.png) 2px 2px no-repeat;
+    color: #114165;
+    padding-left: 32px;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75)
+}
+
+.content__middle__left_column--h2--disk li {
+	list-style-type: circle;
+	color: #79878d;
+	margin-left: 46px;
+	margin-bottom: 8px;
+}
+
+.content__middle__left_column--h2--disk .content__middle__left_column--h2--disk--li2 {
+	margin-bottom: 1px;
+}
+
+.content__middle__left_column--h2--disk a {
+	text-decoration: none;
+	letter-spacing: -0.2px;
+	color: #465961;
+}
+
+.content__middle__left_column--h2--disk a:hover {
+	color: #0c3256;
+	font: 14px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.content__middle__left_column--h3 {
+	display: block;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    width: 117px;
+    height: 25px;
+    font: 13px Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    text-align: left;
+    background: url(../img/bubl.png) 2px 2px no-repeat;
+    color: #114165;
+    padding-left: 32px;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75)
+}
+
+.content__middle__left_column--h3--bolt li {
+	list-style-type: circle;
+	color: #79878d;
+	margin-left: 46px;
+	margin-bottom: 8px;
+}
+
+.content__middle__left_column--h3--bolt .content__middle__left_column--h3--bolt--li3 {
+	margin-bottom: 1px;
+}
+
+.content__middle__left_column--h3--bolt a {
+	text-decoration: none;
+	letter-spacing: -0.2px;
+	color: #465961;
+}
+
+.content__middle__left_column--h3--bolt a:hover {
+	color: #0c3256;
+	font: 14px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.content__middle__centr__column {
+	float: left;
+    width: 505px;
+    height: 620px;
+    margin: 12px 10px 0 0;
+    padding: 8px 0 0 22px;
+    border-radius: 2px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,e4e7e8+0,e4e7e8+0,b6c2c8+49,93a7b0+100 */
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e5799 0%, #e4e7e8 0%, #e4e7e8 0%, #b6c2c8 49%, #93a7b0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#e4e7e8 0%,#e4e7e8 0%,#b6c2c8 49%,#93a7b0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #1e5799 0%,#e4e7e8 0%,#e4e7e8 0%,#b6c2c8 49%,#93a7b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#93a7b0',GradientType=0 ); /* IE6-9 */
+}
+
+.content__middle__centr__column__gallery {
+	display: inline-block;
+	width: 136px;
+	height: 175px;
+	margin: 0 29px 28px 0;
+	text-align: center;
+}
+
+.content__middle__centr__column__gallery--price {
+    color: #114165;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.content__middle__centr__column__gallery--mark {
+	color: #206988;
+}
+
+.content__middle__right_column {
+	float: left;
+}
+
+.content__middle__right_column--h {
+	display: block;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    width: 152px;
+    height: 24px;
+    font: 13px Arial, Helvetica, sans-serif;
+    margin: 14px 0 0 0;
+    line-height: 24px;
+    text-align: left;
+    background: url(../img/book.png) 2px 2px no-repeat;
+    color: #114165;
+    padding-left: 28px;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.content__middle__right_column--h1 {
+	display: block;
+    border: 1px solid #8b979c;
+    border-radius: 15px;
+    width: 117px;
+    height: 25px;
+    font: 13px Arial, Helvetica, sans-serif;
+    margin: 14px 0 3px 0;
+    line-height: 28px;
+    text-align: left;
+    background: url(../img/bubl.png) 2px 2px no-repeat;
+    color: #114165;
+    padding-left: 32px;
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.content__middle__right_column--h1--chec1 {
+	margin: 10px 0 0 21px;
+	padding: 0 0 0 0;
+}
+
+.content__middle__right_column--h1--chec1 input {
+	border: 1px solid #8fa6b7;
+}
+
+.content__middle__right_column--h1--submit {
+	width: 79px;
+    height: 24px;
+    margin: 2px 0 0 24px;
+    padding: 0px 0 0 5px;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f6787+0,0d365a+100,7db9e8+100 */
+	background: #1f6787; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1f6787 0%, #0d365a 100%, #7db9e8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #1f6787 0%,#0d365a 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #1f6787 0%,#0d365a 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6787', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+.brand {
+	margin: 36px 0px 20px 117px;
+}
+/*END CONTENT*/
+
+/*FOOTER*/
+.footer {
+    margin: 0px auto;
+    width: 910px;
+    height: 100px;
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #213a4d;
+}
+.footer ul {
+    padding: 10px 0 10px 0;
+}
+
+.footer__menu li {
+	display: inline;
+    color: #bec6c9;
+    font-size: 13px;
+}
+
+.footer__menu a {
+	text-decoration: none;
+	color: #bec6c9;
+	padding: 0 12px;
+}
+
+.footer__menu a:hover {
+	color: #52abcb;
+}
+
+.footer p {
+    padding: 0px 0 3px 0;
+    color: #d04435;
+    font-size: 11px;
+}
+.footer p a {
+    color: #d04435;
+    text-decoration: none;
+}
+/*END FOOTER*/
