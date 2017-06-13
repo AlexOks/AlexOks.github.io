@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zazor</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="phone">
+				<img src="img/phone.png" alt="">
+				<span>(044)123-45-67</span>
+				<span>(044)567-89-10</span>
+			</div>
+			<div class="registration">
+				<img src="img/ikonka.png" alt="">
+				<form action="#" class="registr">
+						<input type="text" id="login" placeholder
+						="логин">
+						<input type="password" id="password" placeholder="пароль">
+						<input type="submit" id="submit" value="вход">
+				</form>
+				<a href="#" class="reg">регистрация</a>
+				<a href="#" class="forgot">забыли пароль?</a>
+			</div>
+			<nav>
+				<ul class="nav">
+					<li><a href="#"><img src="img/letter.png" alt=""></a></li>
+					<li><a href="#"><img src="img/mapsite.png" alt=""></a></li>
+					<li><a href="#"><img src="img/home.png" alt=""></a></li>
+				</ul>
+			</nav>
+			<img src="img/title_img.png" alt="" class="title">
+			<div class="menu">
+				<ul class="main_menu">
+					<li><a href="#">О КОМПАНИ</a></li>
+					<li><a href="#" class="oplata">ОПЛАТА</a></li>
+					<li><a href="#" class="del">ДОСТАВКА</a></li>
+					<li><a href="#" class="art">СТАТЬИ</a></li>
+					<li><a href="#" class="cont">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="basket">	
+					<span class="blue">0.00 грн.</span>
+					<span class="gray1">на сумму:</span>
+					<span class="blue">0</span>
+					<span class="gray2">товаров:</span>
+					<img src="img/basket.png" alt="" class="bimg">
+				</div>				
+			</div>
+		</header>
+		<div class="content">
+			<div class="forauto">
+				<span class="titletire">Поиск по автомобилю</span>
+				<fieldset class="forauto_disk">
+					<legend>Диски:</legend>
+					<dl>
+						<dt>Марка авто:</dt>
+							<dd>
+								<select class="marka" >
+									<option value=""></option>
+									<option value="">BMW</option>
+									<option value="">Opel</option>
+									<option value="">Audi</option>
+								</select>
+							</dd>
+						<dt>Модель автомобиля:</dt>							
+							<dd>
+								<select class="model" >
+									<option value=""></option>
+									<option value="">model1</option>
+									<option value="">model2</option>
+									<option value="">Q7</option>
+								</select>
+							</dd>
+						<dt>Год выпуска автомобиля:</dt>						
+							<dd>
+								<select class="year" >
+									<option value=""></option>
+									<option value="">2013</option>
+									<option value="">2014</option>
+								</select>
+							</dd>
+						<dt>Комплектация:</dt>							
+							<dd>
+								<select class="complect" >
+									<option value=""></option>
+									<option value="">full</option>
+									<option value="">basic</option>
+								</select>
+							</dd>
+					</dl>
+				</fieldset>	
+				<fieldset class="forauto_tire">
+					<legend>Шины:</legend>
+					<dl>
+						<dt>Марка авто:</dt>
+							<dd>
+								<select class="marka" >
+									<option value=""></option>
+									<option value="">BMW</option>
+									<option value="">Opel</option>
+								</select>
+							</dd>
+						<dt>Модель автомобиля:</dt>							
+							<dd>
+								<select class="model" >
+									<option value=""></option>
+									<option value="">model1</option>
+									<option value="">model2</option>
+								</select>
+							</dd>
+						<dt>Год выпуска автомобиля:</dt>						
+							<dd>
+								<select class="year" >
+									<option value=""></option>
+									<option value="">2013</option>
+									<option value="">2014</option>
+								</select>
+							</dd>
+						<dt>Комплектация:</dt>							
+							<dd>
+								<select class="complect" >
+									<option value=""></option>
+									<option value="">full</option>
+									<option value="">start</option>
+								</select>
+							</dd>
+					</dl>
+					<a href="#" class="search">ПОИСК...</a>
+				</fieldset>	
+			</div>
+			<div class="fortire">
+				<fieldset>
+					<legend>ПОИСК ШИН</legend>
+					<dl>
+						<dt>Размер:</dt>
+							<dd>
+								<select class="razmer" >
+									<option value="">145</option>
+									<option value="">165</option>
+									<option value="">185</option>
+								</select>
+								<span>/</span>
+								<select class="razmerdop" >
+									<option value=""></option>
+									<option value="">195</option>
+									<option value="">190</option>
+								</select>								
+							</dd>
+						<dt>R</dt>						
+							<dd>
+								<select class="radius" >
+									<option value="">12</option>
+									<option value="">14</option>
+									<option value="">16</option>
+								</select>
+							</dd>
+						<dt>Сезон:</dt>					
+							<dd>
+								<div class="box1"><label for="#"><input type="checkbox">лето</label></div>
+								<div class="box2"><label for="#"><input type="checkbox">зима</label></div>
+								<div class="box3"><label for="#"><input type="checkbox">всесез</label></div>
+							</dd>
+					</dl>
+					<a href="#" class="search">ПОИСК...</a>
+				</fieldset>
+			</div>
+			<div class="fordisk">
+				<fieldset class="fordisk_disk">
+					<legend>ПОИСК ДИСКОВ</legend>
+					<dl>
+						<dt>Диаметр диска:</dt>
+							<dd>
+								<select class="diametr" >
+									<option value="">14</option>
+									<option value="">16</option>
+								</select>
+							</dd>
+						<dt>Количество крепежных отверстий:</dt>							<dd class="marg">
+								<select class="number" >
+									<option value="">3</option>
+									<option value="">4</option>
+								</select>
+							</dd>
+						<dt>Диаметр расположения крепёжных отверстий:</dt>			
+							<dd class="marg">
+								<select class="diam_krep" >
+									<option value="">12</option>
+									<option value="">2013</option>
+									<option value="">2014</option>
+								</select>
+							</dd>
+				</fieldset>	
+				<fieldset class="dco">
+					<dl>
+						<dt>ДЦО (диаметр центрального  отверстия):</dt>
+							<dd>
+								<select class="dco_sel" >
+									<option value="">12</option>
+									<option value="">14</option>
+								</select>
+							</dd>
+						<dt>ЕТ (вылет диска):</dt>							
+							<dd>
+								<select class="ET" >
+									<option value="">12</option>
+									<option value="">16</option>
+								</select>
+							</dd>
+					</dl>
+					<a href="#" class="search_dco">ПОИСК...</a>
+				</fieldset>	
+			</div>
+		</div>
+		<div class="content_middle">
+			<div class="left_colum">
+				<span class="left_title">КАТАЛОГ ПРОДУКЦИИ:</span>
+				<span>ШИНЫ</span>
+				<ul>
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul>
+				<span>ДИСКИ</span>
+				<ul>
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul>
+				<span>БОЛТЫ</span>
+				<ul>
+					<li><a href="#">Наименование 1</a></li>
+					<li><a href="#">Наименование 2</a></li>
+					<li><a href="#">Наименование 3</a></li>
+					<li><a href="#">Наименование 4</a></li>
+				</ul>				
+			</div>
+			<div class="center_colum">
+				<span>БРЕНДЫ:</span>
+			</div>
+			<div class="right_colum">
+				<span>БРЕНДЫ:</span>
+			</div>
+		</div>
+		<section class="left-content">
+			
+		</section>
+		<div class="center-content"></div>
+		<section class="right-content"></section>
+	</div>
+	
+</body>
+</html>

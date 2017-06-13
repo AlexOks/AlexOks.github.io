@@ -1,0 +1,10 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	position: relative;
+	margin: 0 auto;
+	min-width: 320px;
+}
