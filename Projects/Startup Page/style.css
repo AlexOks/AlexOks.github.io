@@ -45,12 +45,12 @@ hr {
     padding: 1rem 2rem; 
   }
 
-.btn-primary{
+input.btn-primary{
     background-color: #F05F44;
     border-color: #F05F44;
 }
 
-.btn-primary:hover {
+input.btn-primary:hover {
     background-color: #ee4b08;
     border-color: #ee4b08;
     border-width: 5px;
