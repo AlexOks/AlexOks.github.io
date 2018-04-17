@@ -57,7 +57,7 @@ input.btn-primary:hover {
     cursor: pointer;
   }
     
-  input.btn.btn-primary.btn-xl {
-      margin:  0 auto !important;
+  input.button.btn.btn-primary.btn-xl {
+      margin:auto !important;
       display: block;
   }
