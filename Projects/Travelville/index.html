@@ -60,14 +60,54 @@
         <a href="#contact">Contact</a>
       </li>
     </ul>
+    <!-- Section: Slider-->
+    <section class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/resort1.jpg" alt="">
+          <div class="caption center-align">
+            <h2>Take Your Dream Vacation</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo harum accusantium sunt error, consequuntur eum!</h5>
+            <a href="#" class="btn btn-large">Learn More</a>
+            </div>
+        </li>
+        <li>
+            <img src="img/resort2.jpg" alt="">
+            <div class="caption left-align">
+              <h2>We work With All Budgests</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo harum accusantium sunt error, consequuntur eum!</h5>
+              <a href="#" class="btn btn-large">Learn More</a>
+              </div>
+          </li>
+          <li>
+              <img src="img/resort3.jpg" alt="">
+              <div class="caption right-align">
+                <h2>Group & Indidual Getaways</h2>
+                <h5 class="light grey-text text-lighten-3 hide-on-small-only">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo harum accusantium sunt error, consequuntur eum!</h5>
+                <a href="#" class="btn btn-large">Learn More</a>
+                </div>
+            </li>
+      </ul>
+    </section>
+
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
-      // Custom JS & jQuery here
+      // Init Side nav
       $('.button-collapse').sideNav();
+      //Init Slider
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      })
     });
   </script>
 </body>
