@@ -7,14 +7,89 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
   <link type="text/css" rel="stylesheet" href="css/main.css" />
-
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Materialize Theme</title>
+  <title>Quazzy</title>
 </head>
 
 <body>
-  <h1>Theme Starter</h1>
+  <!--Header-->
+  <header class="main-header">
+    <nav class="transparent">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Quazzy</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+           <i class="fa fav-bars"></i>
+          </a>
+          <ul class="right hide-no-med-and-down">
+            <li>
+              <a href="index.html" class="active-link">Home</a>
+            </li>
+            <li>
+              <a href="solutions.html">Solutions</a>
+            </li>
+            <li>
+              <a href="signup.html">Signup</a>
+            </li>
+            <li>
+              <a href="#" class="btn purple">Login</a> 
+            </li>
+            <li>
+              <a href="https://facebook.com">
+              <i class="fab fa-facebook"></i>
+              </a>
+            </li> 
+            <li>
+              <a href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <h4 class="purple-text text-darken-4 center">Quazzy</h4>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="index.html"><i class="fa fa-home grey-text text-darken-4"></i> Home</a>
+            </li>
+            <li>
+              <a href="solutions.html"><i class="fa fa-cog grey-text text-darken-4"></i>Solutions</a>
+            </li>
+            <li>
+              <a href="signup.html"><i class="fa fa-users grey-text text-darken-4"></i>Signup</a>
+            </li>
+            <li>
+              <div class="divider"></div>
+            </li>
+            <li>
+              <a href="#" class="btn purple">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Showcase-->
+    <div class="showcase container">
+      <div class="row">
+        <div class="col s12 m10 offset-m1 center">
+          <h5>Welcome to Quazzy</h5>
+          <h1>Build for The Future</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nisi quasi, rerum dignissimos animi ab.</p>
+          <br><br>
+          <a href="solutions.html" class="btn btn-large white purple-text">Learn More</a>
+          <a href="signup.html" class="btn btn-large purple white-text">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
